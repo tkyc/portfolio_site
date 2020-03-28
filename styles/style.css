@@ -1,10 +1,24 @@
-.section {
-    height: 45em;
+a { 
+    outline: none;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.section { height: 50em; }
 
 
 .section:nth-child(even) {
     background-color: #E6E6FA;
+}
+
+
+#salutation {
+    height: 100vh;
+    background: black;
 }
 
 
@@ -32,6 +46,7 @@
 
 
 .main-title {
+   z-index: 100;
    position: absolute;
    margin: 0;
    padding: 0;
@@ -159,3 +174,34 @@
     animation: move_wave 15s linear infinite;
 }
 /*-----------------Header1 animation end-----------------*/
+
+
+/*-----------------Typing animation start-----------------*/
+h1 {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    color: rgba(255,255,255,.70);
+}
+
+
+/* Animation */
+h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+}
+
+
+/* text animation */
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 515px;}
+}
+
+
+/* cursor animations */
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+}
+/*------------------Typing animation end------------------*/
