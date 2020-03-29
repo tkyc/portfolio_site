@@ -1,20 +1,13 @@
 (function() {
 
-    const navbar = document.getElementsByClassName("bg-fade")[0];
-    let prevPos = 0;
+    const navbar = document.getElementById("fade-navbar");
     let fade = 0;
 
     window.addEventListener("scroll", function() {
 
-        if (window.scrollY > prevPos && fade < 1) {
-            fade += 0.1;
-            prevPos = window.scrollY;
-        }
+        if (window.scrollY > 300 && fade < 1) fade += 0.1;
 
-        if (window.scrollY < prevPos && fade > 0) {
-            fade -= 0.2;
-            prevPos = window.scrollY;
-        }
+        if (window.scrollY < 300 && fade > 0) fade -= 0.2;
 
         navbar.style.backgroundColor = `rgba(52, 58, 64, ${fade})`;
 

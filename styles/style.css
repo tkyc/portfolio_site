@@ -8,23 +8,92 @@ html {
 }
 
 
-.section { height: 50em; }
+body {
+     background: rgb(255,255,255);
+     background: linear-gradient(0deg, rgba(255,255,255,1) 97%, rgba(0,0,0,1) 100%);
+}
+
+
+.anchor-icon {
+    float: left;
+    margin-right: 1em;
+}
+
+
+.section { 
+    min-height: 110vh;
+}
 
 
 .section:nth-child(even) {
-    background-color: #E6E6FA;
+}
+
+
+.section-title {
+    margin: 0 0 1em 0;
+}
+
+
+.v-line {
+    border-left: 10px solid #343A40;
+    height: 100%;
+    position: absolute;
+}
+
+
+.v-line-dot {
+    border-left: 5px dotted #343A40;
+    height: 100%;
+    z-index: -100;
+}
+
+
+.work-exp-card {
+    margin: 0 0 3em 0;
+    background-color: #FAFAFA;
+}
+
+
+.work-date {
+    float: right;
+}
+
+
+.card-content {
+    padding: 2em 3em 2em 3em;
+}
+
+
+#footer-title {
+    text-align: center;
+    color: #888B8F;
+    margin-top: 10px;
 }
 
 
 #salutation {
     height: 100vh;
-    background: black;
 }
 
 
 #header {
     height: 20em;
     background-color: #2F71E9;
+}
+
+
+#cv {
+    padding: 6em 10vw 0 7vw;
+}
+
+
+#projects {
+    padding: 6em 10vw 0 7vw;
+}
+
+
+#contact {
+    padding: 6em 10vw 0 7vw;
 }
 
 
@@ -178,30 +247,41 @@ html {
 
 /*-----------------Typing animation start-----------------*/
 h1 {
-    border-right: solid 3px rgba(0,255,0,.75);
+    border-right: solid 3px rgba(255, 255, 255);
     white-space: nowrap;
     overflow: hidden;    
-    color: rgba(255,255,255,.70);
+    color: rgba(255, 255, 255);
 }
 
 
 /* Animation */
 h1 {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-               animated-cursor 600ms steps(29,end) infinite;
+    animation: animated-text 4s steps(29, end) 1s 1 normal both,
+               animated-cursor 600ms steps(29, end) infinite;
 }
 
 
-/* text animation */
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 515px;}
+@media only screen and (min-width: 768px) {
+    /* text animation */
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 520px;}
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    /* text animation */
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 230px;}
+    }
 }
 
 
 /* cursor animations */
 @keyframes animated-cursor{
-    from{border-right-color: rgba(0,255,0,.75);}
+    from{border-right-color: rgba(255, 255, 255);}
     to{border-right-color: transparent;}
 }
 /*------------------Typing animation end------------------*/
