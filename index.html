@@ -18,21 +18,12 @@
 
     <body>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="fade-navbar">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="fade-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#page-top"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#cv">CV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                    </ul>
+                <div id="nav-items">
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#cv">CV</a>
                 </div>
             </div>
         </nav>
@@ -80,7 +71,7 @@
         <!--cv-->
         <section class="section" id="cv">
             <h2 class="display-4 section-title">Work Experience</h2>
-            <a href="./public/resume.pdf" download>
+            <a class="d-none d-sm-block" href="./public/resume.pdf" download>
                 <svg class="anchor-icon bi bi-file-earmark-text" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 1h5v1H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V6h1v7a2 2 0 01-2 2H4a2 2 0 01-2-2V3a2 2 0 012-2z"/>
                   <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 019 4.5z"/>
@@ -88,14 +79,15 @@
                 </svg>
             </a>
             <div class="row">
-                <div class="col-1">
+                <div class="col-1 d-none d-sm-block">
                     <div class="v-line-dot"></div>
                 </div>
                 <div class="col-11">
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title">Wanderher.com  |  Student Developer<span class="work-date">01/2019 - 05/2019</span></h5>
+                            <h5 class="card-title d-none d-sm-block">Wanderher.com  |  Student Developer<span class="work-date d-none d-lg-block">01/2019 - 05/2019</span></h5>
+                            <h5 class="card-title d-sm-none">Wanderher.com</h5>
                             <div class="card-body">
                                 Wanderher is a social media travel startup that I worked at for my capstone industry project. I collaborated
                                 in a group of four in an agile environment to deliver requirements as negotiated in a contract. As a group,
@@ -107,7 +99,8 @@
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title">Realtor.com  |  Automation QA Developer<span class="work-date">05/2018 - 12/2018</span></h5>
+                            <h5 class="card-title d-none d-sm-block">Realtor.com  |  Automation Developer<span class="work-date d-none d-lg-block">05/2018 - 12/2018</span></h5>
+                            <h5 class="card-title d-sm-none">Realtor.com</h5>
                             <div class="card-body">
                                 Realtor is an American realty site I worked at for my co-op placement. During that time, I took part in the
                                 Local Team, which was responsible for web pages related to housing locations. I primarily focused on
@@ -125,21 +118,22 @@
         <!--projects-->
         <section class="section" id="projects">
             <h2 class="display-4 section-title">Personal Projects</h2>
-            <a href="https://github.com/tkyc">
+            <a class="d-none d-sm-block" href="https://github.com/tkyc">
                 <svg class="anchor-icon bi bi-archive" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2 5v7.5c0 .864.642 1.5 1.357 1.5h9.286c.715 0 1.357-.636 1.357-1.5V5h1v7.5c0 1.345-1.021 2.5-2.357 2.5H3.357C2.021 15 1 13.845 1 12.5V5h1z" clip-rule="evenodd"/>
                     <path fill-rule="evenodd" d="M5.5 7.5A.5.5 0 016 7h4a.5.5 0 010 1H6a.5.5 0 01-.5-.5zM15 2H1v2h14V2zM1 1a1 1 0 00-1 1v2a1 1 0 001 1h14a1 1 0 001-1V2a1 1 0 00-1-1H1z" clip-rule="evenodd"/>
                 </svg>
             </a>
             <div class="row">
-                <div class="col-1">
+                <div class="col-1 d-none d-sm-block">
                     <div class="v-line-dot"></div>
                 </div>
                 <div class="col-11">
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title">BCIT Pal | Amazon Alexa app</h5>
+                            <h5 class="card-title d-none d-sm-block">BCIT Pal | Amazon Alexa app</h5>
+                            <h5 class="d-sm-none">BCIT Pal | Alexa app</h5>
                             <div class="card-body">
                             </div>
                         </div>
@@ -147,7 +141,8 @@
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title">Flight Deck | WebGL rendered jet game</h5>
+                            <h5 class="card-title d-none d-sm-block">Flight Deck | Graphical web game</h5>
+                            <h5 class="d-sm-none">Flight Deck | WebGL game</h5>
                             <div class="card-body">
                             </div>
                         </div>
