@@ -4,14 +4,16 @@
 
 
 
+
     <head>
         <meta charset="utf-8">
-        <--Uncomment to turn on mobile responsiveness <!meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Terry Chow</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <script defer type="text/javascript" src="./js/navfade.js"></script>
     </head>
+
 
 
 
@@ -31,6 +33,7 @@
 
 
 
+
         <!--Particle Animation-->
         <!--<div class="animation">
            <div class="content">
@@ -40,6 +43,7 @@
               </div>
            </div>
         </div>-->
+
 
 
 
@@ -60,24 +64,28 @@
 
 
 
+
         <section class="section" id="salutation">
             <h1 class="main-title d-none d-md-block"><span class="thin">Hi, I'm</span> Terry. <span class="thin">I'm a</span> developer.</h1>
             <h1 class="main-title d-md-none"><span class="thin">Hi, I'm</span> Terry.</h1>
+                <a class="social" id="social-git" href="https://github.com/tkyc">
+                    <img src="./public/imgs/github-brands.svg"></div>
+                </a>
+                <a class="social" id="social-linkedin" href="https://www.linkedin.com/in/terrykyc/">
+                    <img src="./public/imgs/linkedin-brands.svg"></div>
+                </a>
+                <a class="social" id="social-resume" href="./public/resume.pdf" download>
+                    <img src="./public/imgs/file-regular.svg"></div>
+                </a>
         </section>
+
 
 
 
 
         <!--cv-->
         <section class="section" id="cv">
-            <h2 class="display-4 section-title">Work Experience</h2>
-            <a class="d-none d-sm-block" href="./public/resume.pdf" download>
-                <svg class="anchor-icon bi bi-file-earmark-text" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 1h5v1H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V6h1v7a2 2 0 01-2 2H4a2 2 0 01-2-2V3a2 2 0 012-2z"/>
-                  <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 019 4.5z"/>
-                  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-                </svg>
-            </a>
+            <h2 class="section-title">Work Experience</h2>
             <div class="row">
                 <div class="col-1 d-none d-sm-block">
                     <div class="v-line-dot"></div>
@@ -86,25 +94,29 @@
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title d-none d-sm-block">Wanderher.com  |  Student Developer<span class="work-date d-none d-lg-block">01/2019 - 05/2019</span></h5>
-                            <h5 class="card-title d-sm-none">Wanderher.com</h5>
+                            <h5 class="card-title d-none d-md-block">Wanderher.com  |  Student Developer<span class="work-date d-none d-md-block">01/19 - 05/19</span></h5>
+                            <h5 class="card-title d-md-none">Student Developer</h5>
+                            <h6 class="card-title d-md-none">01/19 - 05/19</h6>
                             <div class="card-body">
                                 Wanderher is a social media travel startup that I worked at for my capstone industry project. I collaborated
                                 in a group of four in an agile environment to deliver requirements as negotiated in a contract. As a group,
                                 we successfully progressed the Wanderher project towards their MVP release. Personally, my contribution
-                                consisted on front-end UI work and back-end work in implementing key features.
+                                consisted of front-end UI work and back-end work in implementing key features.
                             </div>
                         </div>
                     </div>
                     <div class="card shadow mb-5 rounded work-exp-card">
                         <div class="v-line"></div>
                         <div class="card-content">
-                            <h5 class="card-title d-none d-sm-block">Realtor.com  |  Automation Developer<span class="work-date d-none d-lg-block">05/2018 - 12/2018</span></h5>
-                            <h5 class="card-title d-sm-none">Realtor.com</h5>
+                            <h5 class="card-title d-none d-md-block">Realtor.com  |  Automation Developer<span class="work-date d-none d-md-block">05/18 - 12/18</span></h5>
+                            <h5 class="card-title d-md-none">Automation Developer</h5>
+                            <h6 class="card-title d-md-none">05/18 - 12/18</h6>
                             <div class="card-body">
-                                Realtor is an American realty site I worked at for my co-op placement. During that time, I took part in the
-                                Local Team, which was responsible for web pages related to housing locations. I primarily focused on
-                                developing the automation test suites and liaising with front-end developers regarding issues or fixes.
+                                Realtor.com is an American realty website where I worked at for my co-op placement. During that time,
+                                I was a member of the Local Team, which was responsible for web pages related to housing locations. I 
+                                primarily focused on developing the automation test suites and liaising with front-end developers 
+                                regarding issues or fixes. At Realtor.com was where I was initially exposed to formal software testing.
+                                Since then, I've been applying testing principles to my own personal projects.
                             </div>
                         </div>
                     </div>
@@ -115,15 +127,10 @@
 
 
 
+
         <!--projects-->
         <section class="section" id="projects">
-            <h2 class="display-4 section-title">Personal Projects</h2>
-            <a class="d-none d-sm-block" href="https://github.com/tkyc">
-                <svg class="anchor-icon bi bi-archive" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2 5v7.5c0 .864.642 1.5 1.357 1.5h9.286c.715 0 1.357-.636 1.357-1.5V5h1v7.5c0 1.345-1.021 2.5-2.357 2.5H3.357C2.021 15 1 13.845 1 12.5V5h1z" clip-rule="evenodd"/>
-                    <path fill-rule="evenodd" d="M5.5 7.5A.5.5 0 016 7h4a.5.5 0 010 1H6a.5.5 0 01-.5-.5zM15 2H1v2h14V2zM1 1a1 1 0 00-1 1v2a1 1 0 001 1h14a1 1 0 001-1V2a1 1 0 00-1-1H1z" clip-rule="evenodd"/>
-                </svg>
-            </a>
+            <h2 class="section-title">Personal Projects</h2>
             <div class="row">
                 <div class="col-1 d-none d-sm-block">
                     <div class="v-line-dot"></div>
@@ -135,6 +142,7 @@
                             <h5 class="card-title d-none d-sm-block">BCIT Pal | Amazon Alexa app</h5>
                             <h5 class="d-sm-none">BCIT Pal | Alexa app</h5>
                             <div class="card-body">
+                                Voice intent application that helps BCIT students get study room availability or exam time for a course.
                             </div>
                         </div>
                     </div>
@@ -143,7 +151,11 @@
                         <div class="card-content">
                             <h5 class="card-title d-none d-sm-block">Flight Deck | Graphical web game</h5>
                             <h5 class="d-sm-none">Flight Deck | WebGL game</h5>
-                            <div class="card-body">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    3D jet game rendered using Three.js. This project features JWT authorization through use of
+                                    access and refresh tokens.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,15 +166,21 @@
 
 
 
+
         <!--contact-->
         <!--<section class="section" id="contact">
             <h2 class="display-4 section-title">Contact Me</h2>
         </section>-->
 
+
+
+
+
         <footer class="py-2 bg-dark">
             <h6 id="footer-title">Made with <span style="color: #e25555;">&#9829;</span><h6>
         </footer>
     </body>
+
 
 
 
