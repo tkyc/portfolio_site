@@ -23,6 +23,10 @@ body {
     transform: translateX(-50%);
 }
 
+.social:hover {
+    opacity: 0.3;
+}
+
 
 .nav-link {
     color: #888B8F;
